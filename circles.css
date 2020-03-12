@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    position: relative;
+    height: 600px;
+    background: #333;
+    overflow: hidden;
+}
+#elementNeki{
+    width: 50%;
+    margin-top: 20px;
+    height: 200px;
+    position: relative;
+}
+@keyframes animatePart{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+@keyframes animatePartInside{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.circles{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: scale(0);
+    animation-name: animatePart;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+.innerCircle{
+    content: "";
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%;
+    transform: scale(0);
+    animation-name: animatePartInside;
+    animation-delay: 0.4s;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+}

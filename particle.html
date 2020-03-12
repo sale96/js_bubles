@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="circles.css">
+    <title>Circles</title>
+</head>
+<body>
+    <header>
+        <!-- <div class="circles"></div> -->
+    </header>
+
+    <div id="elementNeki"></div>
+
+    <script src="circles.js"></script>
+    <script>
+        // Ovako se koristi
+        randomCircles.element = 'header'; //Element u koji se ubacuju krugovi
+        randomCircles.time = 2000; //Menjamo vreme na koje se krugovi pojavljuju
+        randomCircles.innerCircleColor = '#fff';
+        randomCircles.maxNum = 30; //Maksimalan broj krugova
+        randomCircles.start(); //Obavezno mora da se startuje, inace nece poceti da stvara krugove
+    </script>
+</body>
+</html>
